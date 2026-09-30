@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Rudranil Ghosh, a student developer studying Computer Science and AI.">
+  <title>Rudranil Ghosh | Student Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR: sticky header, Flexbox layout -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home">RG<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: split layout (text + terminal) using Flexbox -->
+    <section class="container hero" id="home">
+      <div class="hero-text">
+        <p class="label">HELLO, WORLD <span class="dot"></span></p>
+        <h1>Hi, I’m <span class="accent">Rudranil.</span><br>I learn by building.</h1>
+        <p class="lead">A student developer studying Computer Science and AI, exploring web development, Java, Linux, and problem-solving.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#about">Get to know me ↗</a>
+          <a class="btn btn-outline" href="#contact">Contact me</a>
+        </div>
+        <p class="location">Based in Bengaluru, India</p>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar"><span class="dots">● ● ●</span><span>rudranil@portfolio:~</span></div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="out">Rudranil Ghosh</p>
+          <p><span class="prompt">$</span> cat learning.txt</p>
+          <p class="out">Computer Science + AI</p>
+          <p class="out">HTML · CSS · Java · Linux</p>
+          <p><span class="prompt">$</span> cat goals.txt</p>
+          <p class="out">Entrepreneurship · AI · Moonshots</p>
+          <p><span class="prompt">$</span> echo “Always learning”</p>
+          <p class="out">Always learning<span class="cursor"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT: 2-column CSS Grid -->
+    <section class="section container" id="about">
+      <p class="label">01 / ABOUT</p>
+      <h2>Curious about <span class="accent">what’s possible.</span></h2>
+      <div class="about-grid">
+        <p>I’m Rudranil, a Computer Science and AI student who enjoys learning the foundations of programming and web development through hands-on practice.</p>
+        <p>I’m developing my skills in HTML, CSS, Java, Linux, mathematics, and logical reasoning. This portfolio is a place to share my progress as I build and learn.</p>
+      </div>
+      <div class="ambition">
+        <p class="label">WHERE I’M GOING</p>
+        <p>I aspire to build a path in entrepreneurship, immerse myself in the boundless frontier of artificial intelligence, and create bold, ambitious ventures that leave a lasting mark on the world.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS: 3-column CSS Grid of cards -->
+    <section class="band" id="skills">
+      <div class="section container">
+        <p class="label">02 / SKILLS</p>
+        <h2>My growing <span class="accent">toolkit.</span></h2>
+        <div class="skills-grid">
+          <article class="card">
+            <span class="icon">&lt;/&gt;</span>
+            <h3>Web development</h3>
+            <p>Structuring and styling webpages.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+          </article>
+          <article class="card">
+            <span class="icon">{ }</span>
+            <h3>Programming</h3>
+            <p>Practising logic, input, loops, and conditions.</p>
+            <div class="tags"><span>Java</span><span>Problem-solving</span></div>
+          </article>
+          <article class="card">
+            <span class="icon">$_</span>
+            <h3>Linux basics</h3>
+            <p>Exploring the command line and shell scripting.</p>
+            <div class="tags"><span>Linux</span><span>Shell</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+      <p class="label">03 / PROJECTS</p>
+      <h2>Work in <span class="accent">progress.</span></h2>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <span class="badge">IN PROGRESS</span>
+          <h3>Project 01</h3>
+          <p>A handcrafted build currently taking shape. Details, screenshots, and code will be unveiled soon.</p>
+          <div class="tags"><span>HTML</span></div>
+          <!-- Links disabled until the project is ready (clearly marked unavailable) -->
+          <div class="project-links"><span class="soon">Live demo · soon</span><span class="soon">GitHub · soon</span></div>
+        </article>
+        <article class="card project-card">
+          <span class="badge">IN PROGRESS</span>
+          <h3>Project 02</h3>
+          <p>A handcrafted build currently taking shape. Details, screenshots, and code will be unveiled soon.</p>
+          <div class="tags"><span>CSS</span></div>
+          <!-- Links disabled until the project is ready (clearly marked unavailable) -->
+          <div class="project-links"><span class="soon">Live demo · soon</span><span class="soon">GitHub · soon</span></div>
+        </article>
+        <article class="card project-card">
+          <span class="badge">IN PROGRESS</span>
+          <h3>Project 03</h3>
+          <p>A handcrafted build currently taking shape. Details, screenshots, and code will be unveiled soon.</p>
+          <div class="tags"><span>Flexbox</span></div>
+          <!-- Links disabled until the project is ready (clearly marked unavailable) -->
+          <div class="project-links"><span class="soon">Live demo · soon</span><span class="soon">GitHub · soon</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION: timeline using position relative/absolute -->
+    <section class="band" id="education">
+      <div class="section container education">
+        <div>
+          <p class="label">04 / EDUCATION</p>
+          <h2>My learning <span class="accent">journey.</span></h2>
+        </div>
+        <ol class="timeline">
+          <li><p class="stage">CURRENTLY</p><h3>Computer Science and AI</h3><p>Scaler School of Technology</p></li>
+          <li><p class="stage">CURRENTLY</p><h3>BS in Data Science</h3><p>IIT Madras</p></li>
+          <li><p class="stage">COMPLETED · 2026</p><h3>MHT-CET</h3><p>Scored 97.55 percentile</p></li>
+          <li><p class="stage">COMPLETED · 2025</p><h3>HSC</h3><p>Higher Secondary Certificate</p></li>
+          <li><p class="stage">COMPLETED · 2023</p><h3>SSC</h3><p>Secondary School Certificate</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container contact" id="contact">
+      <p class="label">05 / CONTACT</p>
+      <h2 class="big">Let’s <span class="accent">connect.</span></h2>
+      <p class="lead">Have an idea, feedback, or a learning opportunity? Reach out directly.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:rudranil.26bcs10628@sst.scaler.com">Email me ↗</a>
+        <a class="btn btn-outline" href="tel:+919529679494">Call me</a>
+        <!-- TODO: replace YOUR-USERNAME with your real profile names -->
+        <a class="btn btn-outline" href="https://github.com/rudranil26bcs10628" target="_blank">GitHub</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/rudranil-ghosh-696055424" target="_blank">LinkedIn</a>
+      </div>
+      <p class="location">rudranil.26bcs@sst.scaler.com · +91 95296 79494</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© 2026 Rudranil Ghosh</p>
+      <p>Made with HTML &amp; CSS</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
